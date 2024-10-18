@@ -4,6 +4,20 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 70 // тестовое значение, можно изменять
+const score = Math.floor(Math.random() * 101) // тестовое значение, можно изменять (либо просто число написать)
 let grade
 // your code
+
+if (score < 50) {
+    grade = 'F'
+} else if (score >= 50 && score <= 69) {
+    grade = 'D'
+} else if (score >= 70 && score <= 79) {
+    grade = 'C'
+} else if (score >= 80 && score <= 89) {
+    grade = 'B'
+} else {
+    grade = 'A'
+}
+
+console.log(grade);
