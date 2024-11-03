@@ -28,6 +28,7 @@ function includesElement(array, element) {
 
 function findCommonElements(array1, array2) {
     const result = []
+    
     for (let i = 0; i < array1.length; i++) {
         if (includesElement(array1, array2[i])) {
             result.push(array2[i])
