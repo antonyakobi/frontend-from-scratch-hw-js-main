@@ -36,10 +36,11 @@ const gallery = {
 }
 
 function updateGallery(gallery, key, value) {
-  for (const key in gallery) {
-    gallery[key]
-  }
-  gallery[key] = value 
+    if (gallery.hasOwnProperty(key)) {
+      gallery[key] = value 
+    } else {
+      gallery[key] = value
+    }
 }
 
 
