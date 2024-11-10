@@ -36,12 +36,10 @@ const gallery = {
 }
 
 function updateGallery(gallery, key, value) {
-  if (gallery[key]) {
-    gallery[key] = value 
-  } else {
-    gallery[key] = value 
+  for (const key in gallery) {
+    gallery[key]
   }
-  return
+  gallery[key] = value 
 }
 
 
