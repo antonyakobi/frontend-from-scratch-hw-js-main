@@ -36,11 +36,15 @@ const gallery = {
 }
 
 function updateGallery(gallery, key, value) {
+  if (gallery[key]) {
     gallery[key] = value 
+  } else {
+    gallery[key] = value 
+  }
 }
 
 
-// updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
-// updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali')
 
-// console.log(gallery)
+console.log(gallery)
