@@ -41,6 +41,7 @@ function updateGallery(gallery, key, value) {
   } else {
     gallery[key] = value 
   }
+  return
 }
 
 
