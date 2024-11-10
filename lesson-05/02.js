@@ -36,12 +36,16 @@ const gallery = {
 }
 
 function updateGallery(gallery, key, value) {
-    if (gallery.hasOwnProperty(key)) {
-      gallery[key] = value 
-    } else {
-      gallery[key] = value
-    }
+  gallery[key] = value
 }
+
+// function updateGallery(gallery, key, value) {
+//     if (gallery.hasOwnProperty(key)) {
+//       gallery[key] = value 
+//     } else {
+//       gallery[key] = value
+//     }
+// }
 
 
 updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
