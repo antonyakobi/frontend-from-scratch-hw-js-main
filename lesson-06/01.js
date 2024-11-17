@@ -18,3 +18,26 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
 
+const prevButton = document.getElementById('prev-button')
+const nextButton = document.getElementById('next-button')
+const image = document.getElementById('web-tech-image')
+
+let i = 0
+
+prevButton.addEventListener('click', function () {
+  if (i === 0) {
+    i = WEB_TECH_IMAGES.length -1
+  } else {
+    i--
+  }
+  image.setAttribute('src', WEB_TECH_IMAGES[i])
+})
+
+nextButton.addEventListener('click', function () {
+  if (i === WEB_TECH_IMAGES.length - 1) {
+    i = 0
+  } else {
+    i++
+  }
+  image.setAttribute('src', WEB_TECH_IMAGES[i])
+})
