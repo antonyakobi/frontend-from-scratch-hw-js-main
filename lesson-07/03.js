@@ -10,10 +10,11 @@
 */
 
 function truncate(str, maxLength) {
-  if (str.lenght <= maxLength) {
-    return str
-  }
-  return str.slice(0, maxLength) + '...'
+  if (str.length <= maxLength) {
+    return str;
+  } 
+  return str.slice(0, maxLength) + '...';
+  // return str.length > maxLength ? str.substring(0, maxLength) + '...' : str;
 }
 
 console.log(truncate("Вот, что мне действительно нравится в этом", 20));
