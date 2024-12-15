@@ -12,3 +12,4 @@ function isEven(a) {
 const chet = isEven(4)
 console.log(chet);
 
+ 
